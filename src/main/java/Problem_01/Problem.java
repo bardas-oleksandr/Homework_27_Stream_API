@@ -79,7 +79,7 @@ public class Problem implements IProblem {
         } catch (NoSuchFileException e) {
             System.out.println("You need to have file src/main/resources/source.txt");
         } catch (IOException e) {
-            System.out.println("It is very bad. IOException has happened");
+            System.out.println("It is too bad. IOException has happened");
         }
     }
 }
