@@ -80,6 +80,7 @@ public class Problem implements IProblem {
             System.out.println("You need to have file src/main/resources/source.txt");
         } catch (IOException e) {
             System.out.println("It is too bad. IOException has happened");
+            System.out.println("This message needs to be reverted");
         }
     }
 }
