@@ -77,7 +77,7 @@ public class Problem implements IProblem {
             int count = stream.map(mapper).reduce(0, (a, b) -> a + b);
             System.out.println("Word \"" + WORD + "\" happens to occur " + count + " times in the whole file");
         } catch (NoSuchFileException e) {
-            System.out.println("Source file was not found");
+            System.out.println("It is too bad. Source file was not found");
         } catch (IOException e) {
             System.out.println("IOException has happened");
         }
