@@ -29,7 +29,7 @@ public class Problem implements IProblem {
             });
             System.out.println("The longest line is:\n" + theLongest);
         } catch (NoSuchFileException e) {
-            System.out.println("Source file was not found");
+            System.out.println("You need to have file src/main/resources/source.txt");
         } catch (IOException e) {
             System.out.println("IOException has happened");
         }
@@ -42,7 +42,7 @@ public class Problem implements IProblem {
                 stream.filter((line) -> line.length() == MAX)
                         .forEach(System.out::println);
             } catch (NoSuchFileException e) {
-                System.out.println("Source file was not found");
+                System.out.println("You need to have file src/main/resources/source.txt");
             } catch (IOException e) {
                 System.out.println("IOException has happened");
             }
@@ -77,9 +77,9 @@ public class Problem implements IProblem {
             int count = stream.map(mapper).reduce(0, (a, b) -> a + b);
             System.out.println("Word \"" + WORD + "\" happens to occur " + count + " times in the whole file");
         } catch (NoSuchFileException e) {
-            System.out.println("It is too bad. Source file was not found");
+            System.out.println("Sorry pal! You need to have file src/main/resources/source.txt");
         } catch (IOException e) {
-            System.out.println("IOException has happened");
+            System.out.println("It is very bad. IOException has happened");
         }
     }
 }
